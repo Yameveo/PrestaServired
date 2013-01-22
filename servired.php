@@ -15,9 +15,9 @@ class servired extends PaymentModule
         $this->tab = 'payments_gateways';
         $this->version = '1.50';
 
-        // Array config con los datos de configuraci�n
+        // Array config con los datos de configuración
         $config = Configuration::getMultiple(array('SERVIRED_URLTPV', 'SERVIRED_CLAVE', 'SERVIRED_NOMBRE', 'SERVIRED_CODIGO', 'SERVIRED_TERMINAL', 'SERVIRED_TIPOFIRMA', 'SERVIRED_RECARGO', 'SERVIRED_MONEDA', 'SERVIRED_TRANS', 'SERVIRED_NOTIFICACION', 'SERVIRED_SSL', 'SERVIRED_ERROR_PAGO', 'SERVIRED_IDIOMAS_ESTADO'));
-        // Establecer propiedades seg�n los datos de configuraci�n
+        // Establecer propiedades según los datos de configuración
         $this->env = $config['SERVIRED_URLTPV'];
         switch ($this->env) {
             case 1:
