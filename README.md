@@ -1,5 +1,4 @@
 # Módulo Servired por Prestashop
-/* -----------------------------------------------------------------------------
   Autor: Javier Barredo
   Autor E-Mail: naveto@gmail.com
   Fecha: Mayo 2011
@@ -13,7 +12,7 @@
   Notas para la versión de Servired 1.50 (28-5-2011)
   --------------------------------
 
-  [-] Adaptación del módulo a la versión 1.4 de Prestashop:
+ Adaptación del módulo a la versión 1.4 de Prestashop:
   * El pago válido retorna a OrderConfirmation, de modo que sigue los cauces de los demós módulos de pago de Prestashop.
   * De este modo ahora el módulo Google Analytics puede ofrecer estadásticas de estos pagos. Antes no se registraban dichas conversiones.
   * Adaptada plantilla pago-correcto.tpl
@@ -23,7 +22,7 @@
   * Corregida ruta de icono "personalización"
   * pago_correcto.php deja de ser necesario
   * Algunas modificaciones de gráficos
-  [*] Hibridación del módulo adaptado por David Vidal para aumentar la compatibilidad con las plataformas Sermepa.
+ Hibridación del módulo adaptado por David Vidal para aumentar la compatibilidad con las plataformas Sermepa.
  * Se redimensionan imagenes que quedaban cortadas en los resultados de la plataforma.
  * Se corrige error con pagos inferiores a 1 euros.
  * Se añade selector para configurar el entorno.
@@ -33,4 +32,3 @@
  * Se aumenta el número de versión para no confundirlo con las anteriores, ya que existe una versión 1.0 muy similar, pero con menos características.
 
   Released under the GNU General Public License
-  ----------------------------------------------------------------------------- */
