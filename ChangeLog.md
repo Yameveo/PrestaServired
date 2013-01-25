@@ -1,3 +1,16 @@
+1.5.2
+ * Code cleanup
+ * Added GPL licence file 
+ * Added version, changelog and authors files
+ * Optimized images
+
+---
+1.5.1
+ * Modificación de imagenes para pago correcto y erroneo.
+ * Eliminación de archivos innecesarios (error.jpg y error_log)
+ * Eliminación del sistema de recargo de la parte administrativa y frontal.
+
+---
 1.5.0
 ## Adaptación del módulo a la versión 1.4 de Prestashop:
 

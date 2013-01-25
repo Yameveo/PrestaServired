@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>servired</name>
-	<displayName>Servired</displayName>
-	<version>1.50</version>
-	<description>Aceptar pagos con tarjeta vÃ­a Servired</description>
-	<author></author>
-	<tab>payments_gateways</tab>
-	<is_configurable>1</is_configurable>
-	<need_instance>1</need_instance>
-	<limited_countries></limited_countries>
+    <name>servired</name>
+    <displayName><![CDATA[Servired Payment Gateway]]>
+    </displayName>
+    <version><![CDATA[1.5.2]]>
+    </version>
+    <description><![CDATA[Payment using debit or credit card trough Servired Payment Gateway]]>
+    </description>
+    <author><![CDATA[]]>
+    </author>
+    <tab><![CDATA[payments_gateways]]>
+    </tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+    <limited_countries></limited_countries>
 </module>

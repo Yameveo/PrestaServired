@@ -1,4 +1,7 @@
 # Módulo Servired por Prestashop
+
+http://www.prestashop.com/forums/topic/110666-modulo-servired-08f-perfectamente-funcional-en-ps14/
+
 Autor: Javier Barredo
 
 Autor E-Mail: naveto@gmail.com
@@ -9,11 +12,26 @@ Agradecimientos: Yago Ferrer por su módulo de pago que se utilizá como base de
 
 Alberto Fernández por su ayuda con los testeos y las imágenes.
 
-Version: 1.50 (solo probada en PS1.4)
+Version: 1.5.2 (solo probada en PS1.4)
 
 Adaptación a PS 1.4: David Vidal (chienandalu@gmail.com)
 
 Hibridación del módulo con versiones anteriores: Francisco J. Matas (fjmatad@hotmail.com)
+
+
+## Notas para la versión de Servired 1.52
+--------------------------------
+
+* Code cleanup
+* Added GPL licence file 
+* Added version, changelog and authors files
+* Optimized images
+
+## Notas para la versión de Servired 1.51
+--------------------------------
+* Modificación de imagenes para pago correcto y erroneo.
+* Eliminación de archivos innecesarios (error.jpg y error_log)
+* Eliminación del sistema de recargo de la parte administrativa y frontal.
 
 ## Notas para la versión de Servired 1.50 (28-5-2011)
 --------------------------------
