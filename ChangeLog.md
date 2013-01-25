@@ -3,6 +3,7 @@
  * Added GPL licence file 
  * Added version, changelog and authors files
  * Optimized images
+ * Changed to Redsys test server
 
 ---
 1.5.1

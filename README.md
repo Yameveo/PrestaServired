@@ -26,6 +26,7 @@ Hibridación del módulo con versiones anteriores: Francisco J. Matas (fjmatad@h
 * Added GPL licence file 
 * Added version, changelog and authors files
 * Optimized images
+* Changed to Redsys test server
 
 ## Notas para la versión de Servired 1.51
 --------------------------------
