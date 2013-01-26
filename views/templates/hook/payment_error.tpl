@@ -1,7 +1,7 @@
 {capture name=path}{l s='Payment ERROR' mod='servired'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 <div class="cms"  style="min-height: 100px; margin-top: 22px;">
-<img src="{$this_path}modules/servired/img/payment_error.gif" alt="Error in payment" longdesc="Error in payment" /></td></tr><tr>
+<img src="{$this_path}modules/servired/img/payment-error.gif" alt="Error in payment" longdesc="Error in payment" /></td></tr><tr>
 <h2 style="font-style: normal;">{l s='Your credit card payment could not be accomplished' mod='servired'}</h2><br />
 <p>
 {l s='We are sorry, but your payment has not been successfully accomplished. You can try again or choose another payment method. Remember that you can only use Visa and Mastercard credit cards, and Maestro debit cards as well (Spain only).' mod='servired'}

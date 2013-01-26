@@ -12,15 +12,17 @@ include(dirname(__FILE__) . '/../../config/config.inc.php');
 include(dirname(__FILE__) . '/../../header.php');
 include(dirname(__FILE__) . '/servired.php');
 
-if (!empty($_POST)) {
+if (!empty($_GET)) {
 
     //getting response answer
-    $total_amount = $_POST["Ds_Amount"];
-    $order_id = $_POST["Ds_Order"];
-    $merchant_code = $_POST["Ds_MerchantCode"];
-    $currency_code = $_POST["Ds_Currency"];
-    $remote_response = $_POST["Ds_Response"];
-    $remote_signature = $_POST["Ds_Signature"];
+    $total_amount = $_GET["Ds_Amount"];
+    $order_id = $_GET["Ds_Order"];
+    $cart_id = $_GET["id_cart"];
+    $key = $_GET["key"];
+    $merchant_code = $_GET["Ds_MerchantCode"];
+    $currency_code = $_GET["Ds_Currency"];
+    $remote_response = $_GET["Ds_Response"];
+    $remote_signature = $_GET["Ds_Signature"];
 
     $servired = new servired();
 
@@ -44,6 +46,8 @@ if (!empty($_POST)) {
       'message' => $message
       ));
      */
+    var_dump($local_signature);
+    var_dump($remote_signature);
     if ($local_signature == $remote_signature) {
         $total_amount = number_format($total_amount / 100, 4, '.', '');
         $order_id = substr($order_id, 0, 8);
@@ -55,6 +59,12 @@ if (!empty($_POST)) {
             $mailvars = array();
             $cart = new Cart($order_id);
             $servired->validateOrder($order_id, _PS_OS_PAYMENT_, $total_amount, $servired->displayName, NULL, $mailvars, NULL, false, $cart->secure_key);
+            //die('ok');
+            $url = 'index.php?controller=order-confirmation&';
+            if (_PS_VERSION_ < '1.5')
+                $url = 'order-confirmation.php?';
+
+            Tools::redirect($url . 'id_module=' . (int) $servired->id . '&id_cart=' . $cart_id . '&key=' . $key . '&id_order=' . $servired->currentOrder);
         } else {
             //invalid purchase
             if ($payment_error == 0) {
@@ -63,6 +73,16 @@ if (!empty($_POST)) {
             } elseif ($payment_error == 1) {
                 //let the customers retry the payment
             }
+            $checkout_type = Configuration::get('PS_ORDER_PROCESS_TYPE') ? 'order-opc' : 'order';
+            $url = _PS_VERSION_ >= '1.5' ? 'index.php?controller=' . $checkout_type . '&' : $checkout_type . '.php?';
+            $url .= 'step=3&cgv=1&message=' . $remote_response;
+
+            if (!isset($_SERVER['HTTP_REFERER']) || strstr($_SERVER['HTTP_REFERER'], 'order'))
+                Tools::redirect($url);
+            elseif (strstr($_SERVER['HTTP_REFERER'], '?'))
+                Tools::redirect($_SERVER['HTTP_REFERER'] . '&gestpayerror=1&message=' . $remote_response, '');
+            else
+                Tools::redirect($_SERVER['HTTP_REFERER'] . '?gestpayerror=1&message=' . $remote_response, '');
         }
     }
 }

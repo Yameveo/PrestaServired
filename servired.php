@@ -445,13 +445,14 @@ class servired extends PaymentModule
             'merchant_url' => $merchant_url,
             'notification' => Tools::getValue('notification', $this->notification),
             'product_list' => $products_description,
-            'url_ok' => 'http://' . $_SERVER['HTTP_HOST'] . __PS_BASE_URI__ . 'order-confirmation.php?id_cart=' . $id_cart . '&id_module=' . (int) ($this->id) . '&key=' . $customer->secure_key . '&id_order=' . (int) ($order),
+//            'url_ok' => 'http://' . $_SERVER['HTTP_HOST'] . __PS_BASE_URI__ . 'order-confirmation.php?id_cart=' . $id_cart . '&id_module=' . (int) ($this->id) . '&key=' . $customer->secure_key . '&id_order=' . (int) ($order),
+            'url_ok' => $merchant_url . '?id_cart=' . $id_cart . '&id_module=' . (int) ($this->id) . '&key=' . $customer->secure_key . '&id_order=' . (int) ($order),
             'url_ko' => 'http://' . $_SERVER['HTTP_HOST'] . __PS_BASE_URI__ . 'modules/servired/payment_error.php',
             'signature' => $signature,
             'tpv_lang_code' => $tpv_lang_code,
                 //'extra_fee' => number_format($extra_fee, 2, '.', '')                        
         ));
-        return $this->display(__FILE__, 'payment.tpl');
+        return $this->display(__FILE__, 'views/templates/hook/payment.tpl');
     }
 
     public function hookPaymentReturn($params)
@@ -463,7 +464,7 @@ class servired extends PaymentModule
             'this_path' => $this->_path,
             'this_path_ssl' => Tools::getShopDomainSsl(true, true) . __PS_BASE_URI__ . 'modules/' . $this->name . '/'
         ));
-        return $this->display(__FILE__, 'payment_return.tpl');
+        return $this->display(__FILE__, 'views/templates/hook/payment_return.tpl');
     }
 
     /*

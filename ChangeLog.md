@@ -1,3 +1,8 @@
+1.5.3
+ * Fixed problems with templates
+ * Now the module works with Synchronized payment
+
+---
 1.5.2
  * Code cleanup
  * Added GPL licence file 
