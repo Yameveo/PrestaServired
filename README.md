@@ -2,7 +2,12 @@
 
 http://www.prestashop.com/forums/topic/110666-modulo-servired-08f-perfectamente-funcional-en-ps14/
 
-## Notas para la versión de Servired 1.52
+## Notas para la versión de Servired 1.5.2
+
+* Fixed problems with templates
+* Now the module works with Synchronized payment
+
+## Notas para la versión de Servired 1.5.2
 
 * Code cleanup
 * Added GPL licence file 
@@ -10,13 +15,13 @@ http://www.prestashop.com/forums/topic/110666-modulo-servired-08f-perfectamente-
 * Optimized images
 * Changed to Redsys test server
 
-## Notas para la versión de Servired 1.51
+## Notas para la versión de Servired 1.5.1
 
 * Modificación de imagenes para pago correcto y erroneo.
 * Eliminación de archivos innecesarios (error.jpg y error_log)
 * Eliminación del sistema de recargo de la parte administrativa y frontal.
 
-## Notas para la versión de Servired 1.50 (28-5-2011)
+## Notas para la versión de Servired 1.5.0 (28-5-2011)
 
 ### Adaptación del módulo a la versión 1.4 de Prestashop:
 
