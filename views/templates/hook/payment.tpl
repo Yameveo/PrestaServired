@@ -1,7 +1,7 @@
 <p class="payment_module">
 	<a href="javascript:$('#servired_form').submit();" title="{l s='Connect to TPV' mod='servired'}" >
-		<img src="{$module_dir}img/credit_cards.jpg" alt="{l s='Connect to TPV' mod='servired'}" style="float:left"/>
-		{l s='Credit card payment. Safe connection via Servired. We will not have access to your data at any moment during this operation. Once your payment is acomplished, you will be redirected to our shop again.' mod='servired'}
+		<img src="{$module_dir}img/credit_cards.jpg" alt="{l s='Connect to TPV' mod='servired'}" style="height:48px"/>
+		{l s='Credit card payment. Safe connection via La Caixa.' mod='servired'}
 	</a>
 </p>
 
