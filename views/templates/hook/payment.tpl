@@ -1,7 +1,7 @@
 <p class="payment_module">
 	<a href="javascript:$('#servired_form').submit();" title="{l s='Connect to TPV' mod='servired'}" >
 		<img src="{$module_dir}img/credit_cards.jpg" alt="{l s='Connect to TPV' mod='servired'}" style="height:48px"/>
-		{l s='Credit card payment. Safe connection via La Caixa.' mod='servired'}
+		{l s='Credit card payment: Visa, Visa Electron, Mastercard or Maestro. Secure connection through La Caixa.' mod='servired'}
 	</a>
 </p>
 
