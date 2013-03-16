@@ -87,5 +87,9 @@ if (!empty($request)) {
                 Tools::redirect($_SERVER['HTTP_REFERER'] . '?gestpayerror=1&message=' . $remote_response, '');
         }
     }
+    else {
+       $url = _PS_VERSION_ >= '1.5' ? 'index.php?controller=history' : 'history.php';
+       Tools::redirect($url);
+    }
 }
 ?>
