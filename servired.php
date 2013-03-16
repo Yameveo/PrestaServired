@@ -23,7 +23,7 @@ class servired extends PaymentModule
     {
         $this->name = 'servired';
         $this->tab = 'payments_gateways';
-        $this->version = '1.5.3';
+        $this->version = '1.5.4';
 
         //configuration data array
         $config = Configuration::getMultiple(array('SERVIRED_TPV_URL', 'SERVIRED_MERCHANT_KEY', 'SERVIRED_MERCHANT_NAME', 'SERVIRED_MERCHANT_CODE', 'SERVIRED_TERMINAL', 'SERVIRED_SIGNATURE', 'SERVIRED_EXTRA_FEE', 'SERVIRED_CURRENCY', 'SERVIRED_TRANSACTION_TYPE', 'SERVIRED_NOTIFICATION', 'SERVIRED_SSL', 'SERVIRED_PAYMENT_ERROR', 'SERVIRED_LANGUAGES'));

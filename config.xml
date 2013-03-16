@@ -2,7 +2,7 @@
 <module>
 	<name>servired</name>
 	<displayName><![CDATA[Servired Payment Gateway]]></displayName>
-	<version><![CDATA[1.5.3]]></version>
+	<version><![CDATA[1.5.4]]></version>
 	<description><![CDATA[Payment using debit or credit card trough Servired Payment Gateway]]></description>
 	<author><![CDATA[]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>

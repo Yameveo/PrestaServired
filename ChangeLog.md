@@ -1,3 +1,7 @@
+1.5.4
+ * Added support for POST notification
+
+---
 1.5.3
  * Fixed problems with templates
  * Now the module works with Synchronized payment

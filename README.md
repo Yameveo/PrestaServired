@@ -2,6 +2,12 @@
 
 http://www.prestashop.com/forums/topic/110666-modulo-servired-08f-perfectamente-funcional-en-ps14/
 
+
+## Notas para la versión de Servired 1.5.4
+
+* Added support for POST notification
+* Now the module works with Synchronized payment
+
 ## Notas para la versión de Servired 1.5.3
 
 * Fixed problems with templates
