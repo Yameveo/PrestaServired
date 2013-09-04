@@ -92,4 +92,3 @@ if (!empty($request)) {
        Tools::redirect($url);
     }
 }
-?>

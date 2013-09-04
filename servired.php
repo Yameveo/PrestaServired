@@ -269,36 +269,36 @@ class servired extends PaymentModule
 		<td width="450" style="height: 35px;">' . $this->l('HTTP Notification (When disable neither processes order or empties shopping cart)') . '</td>
 			<td>
 			<input type="radio" name="notification" id="notification_1" value="1"' . $notification_active . '/>
-			<img src="../img/admin/enabled.gif" alt="' . $this->l('Activado') . '" title="' . $this->l('Activado') . '" />
+			<img src="../img/admin/enabled.gif" alt="' . $this->l('Enabled') . '" title="' . $this->l('Enabled') . '" />
 			<input type="radio" name="notification" id="notification_0" value="0"' . $notification_deactive . '/>
-			<img src="../img/admin/disabled.gif" alt="' . $this->l('Desactivado') . '" title="' . $this->l('Desactivado') . '" />
+			<img src="../img/admin/disabled.gif" alt="' . $this->l('Disabled') . '" title="' . $this->l('Disabled') . '" />
 			</td>
 		</tr>
 		<tr>
 		<td width="340" style="height: 35px;">' . $this->l('SSL for validation URL') . '</td>
 			<td>
 			<input type="radio" name="ssl" id="ssl_1" value="1" ' . $ssl_active . '/>
-			<img src="../img/admin/enabled.gif" alt="' . $this->l('Active') . '" title="' . $this->l('Active') . '" />
+			<img src="../img/admin/enabled.gif" alt="' . $this->l('Enabled') . '" title="' . $this->l('Enabled') . '" />
 			<input type="radio" name="ssl" id="ssl_0" value="0" ' . $ssl_deactive . '/>
-			<img src="../img/admin/disabled.gif" alt="' . $this->l('Deactive') . '" title="' . $this->l('Deactive') . '" />
+			<img src="../img/admin/disabled.gif" alt="' . $this->l('Disabled') . '" title="' . $this->l('Disabled') . '" />
 			</td>
 		</tr>
 		<tr>
 		<td width="340" style="height: 35px;">' . $this->l('In case of error, let the customers choose another payment method') . '</td>
 			<td>
 			<input type="radio" name="payment_error" id="payment_error_1" value="1" ' . $payment_error_active . '/>
-			<img src="../img/admin/enabled.gif" alt="' . $this->l('Active') . '" title="' . $this->l('Active') . '" />
+			<img src="../img/admin/enabled.gif" alt="' . $this->l('Enabled') . '" title="' . $this->l('Enabled') . '" />
 			<input type="radio" name="payment_error" id="payment_error_0" value="0" ' . $payment_error_deactive . '/>
-			<img src="../img/admin/disabled.gif" alt="' . $this->l('Deactive') . '" title="' . $this->l('Deactive') . '" />
+			<img src="../img/admin/disabled.gif" alt="' . $this->l('Disabled') . '" title="' . $this->l('Disabled') . '" />
 			</td>
 		</tr>
 		<tr>
 		<td width="340" style="height: 35px;">' . $this->l('Enable all languages into TPV') . '</td>
 			<td>
 			<input type="radio" name="lang_activation" id="lang_status_active" value="1" ' . $lang_status_active . '/>
-			<img src="../img/admin/enabled.gif" alt="' . $this->l('Active') . '" title="' . $this->l('Active') . '" />
+			<img src="../img/admin/enabled.gif" alt="' . $this->l('Enabled') . '" title="' . $this->l('Enabled') . '" />
 			<input type="radio" name="lang_activation" id="lang_status_deactive" value="0" ' . $lang_status_deactive . '/>
-			<img src="../img/admin/disabled.gif" alt="' . $this->l('Deactive') . '" title="' . $this->l('Deactive') . '" />
+			<img src="../img/admin/disabled.gif" alt="' . $this->l('Disabled') . '" title="' . $this->l('Disabled') . '" />
 			</td>
 		</tr>
 		</table>
@@ -488,5 +488,3 @@ class servired extends PaymentModule
      * 
      */
 }
-
-?>

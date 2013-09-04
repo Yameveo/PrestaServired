@@ -1,8 +1,8 @@
 {capture name=path}{l s='Payment ERROR' mod='servired'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
-<div class="cms"  style="min-height: 100px; margin-top: 22px;">
-<img src="{$this_path}modules/servired/img/payment-error.gif" alt="Error in payment" longdesc="Error in payment" /></td></tr><tr>
-<h2 style="font-style: normal;">{l s='Your credit card payment could not be accomplished' mod='servired'}</h2><br />
+<div class="cms" style="min-height: 100px">
+<img src="{$this_path}modules/servired/img/payment-error.gif" alt="" style="margin-bottom: 1em" />
+<h2>{l s='Your credit card payment could not be accomplished' mod='servired'}</h2><br />
 <p>
 {l s='We are sorry, but your payment has not been successfully accomplished. You can try again or choose another payment method. Remember that you can only use Visa and Mastercard credit cards, and Maestro debit cards as well (Spain only).' mod='servired'}
 </p>
@@ -20,5 +20,5 @@
 {l s='In any case, you can contact us by mail or by phone and we will try to fix your problem together.' mod='servired'}
 </P>
 <br />
-<a class="button" href="{$base_dir_ssl}order.php?step=3" title="{l s='Payment'}" style="margin-bottom:15px; float: right;" title="{l s='Payment'}" {$this_path}order.php?step=3">{l s='Try again' mod='servired'}</a>
+<a class="button" href="{$base_dir_ssl}order.php?step=3" style="margin-bottom:15px" title="{l s='Payment'}" {$this_path}order.php?step=3">&laquo;&nbsp;{l s='Try again' mod='servired'}</a>
 </div>
